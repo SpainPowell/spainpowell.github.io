@@ -40,7 +40,7 @@
       </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-backdrop" aria-hidden="true"></div>
         <div class="shell hero-inner">
@@ -53,9 +53,9 @@
               <a class="text-link" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
             </div>
           </div>
-          <div class="hero-readout" aria-label="Current focus">
+          <div class="hero-readout" role="group" aria-labelledby="current-focus-heading">
             <div class="readout-heading">
-              <span>Current focus</span>
+              <span id="current-focus-heading">Current focus</span>
               <span class="readout-live">Active</span>
             </div>
             <div class="readout-route" aria-hidden="true">
@@ -122,8 +122,8 @@
                   <p class="project-kicker">Forecasting for time-commit-centric logistics operations.</p>
                 </div>
                 <p>Extended a Python model to forecast new facility performance up to 12 months ahead. Replaced a manual engineering workflow that took hours per station with a model run under five minutes per location.</p>
-                <div class="tag-row" aria-label="Technologies used">
-                  <span>Python</span><span>SQL</span><span>Forecasting</span><span>Operations</span>
+                <div class="tag-row" role="list" aria-label="Technologies used">
+                  <span role="listitem">Python</span><span role="listitem">SQL</span><span role="listitem">Forecasting</span><span role="listitem">Operations</span>
                 </div>
               </div>
               <div class="project-outcome">
@@ -141,10 +141,11 @@
               <div class="project-content">
                 <h3>Win The Numbers</h3>
                 <p class="project-kicker">A fantasy football companion built around roster-aware value.</p>
-                <p>Mobile product that aggregates sports data, estimates player value, and generates trade suggestions around the needs of an entire league. Built with a monetization and launch system around the product.</p>
-                <div class="tag-row" aria-label="Technologies used">
-                  <span>Python</span><span>React Native</span><span>Sports data</span><span>AdMob</span>
+                <p>Mobile product that combines dynasty player values, a trade calculator, roster-aware trade ideas, and team analysis around each league's settings and direction. Built with a monetization and launch system around the product.</p>
+                <div class="tag-row" role="list" aria-label="Technologies used">
+                  <span role="listitem">Python</span><span role="listitem">React Native</span><span role="listitem">Sports data</span><span role="listitem">AdMob</span>
                 </div>
+                <a class="project-link" href="https://win-the-numbers.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Win The Numbers website (opens in a new tab)">Visit product site <span aria-hidden="true">↗</span></a>
               </div>
               <div class="project-outcome">
                 <span>Signal</span>
@@ -162,8 +163,8 @@
                 <h3>Baseball analytics</h3>
                 <p class="project-kicker">From real-game tracking data to coaching decisions.</p>
                 <p>Built a Streamlit application for Clemson Olympic Sports, translating real-game sports tracking data into performance metrics, scouting reports, and post-game breakdowns for coaching decisions.</p>
-                <div class="tag-row" aria-label="Technologies used">
-                  <span>Streamlit</span><span>Sports data</span><span>Python</span><span>Analytics</span>
+                <div class="tag-row" role="list" aria-label="Technologies used">
+                  <span role="listitem">Streamlit</span><span role="listitem">Sports data</span><span role="listitem">Python</span><span role="listitem">Analytics</span>
                 </div>
               </div>
               <div class="project-outcome">
@@ -182,8 +183,8 @@
                 <h3>Claude / Codex harness</h3>
                 <p class="project-kicker">An operating system for reliable agent-assisted work.</p>
                 <p>Designed shared doctrine, runtime mappings, source boundaries, hooks, evals, runbooks, manifests, and review loops that make AI-agent workflows more repeatable and more accountable.</p>
-                <div class="tag-row" aria-label="System components">
-                  <span>Agent systems</span><span>Eval design</span><span>Provenance</span><span>Runbooks</span>
+                <div class="tag-row" role="list" aria-label="System components">
+                  <span role="listitem">Agent systems</span><span role="listitem">Eval design</span><span role="listitem">Provenance</span><span role="listitem">Runbooks</span>
                 </div>
               </div>
               <div class="project-outcome">
@@ -253,11 +254,11 @@
         <div class="shell contact-inner">
           <div>
             <p class="section-index">04 / Contact</p>
-            <h2 id="contact-title">Have a hard problem with a useful next step?</h2>
+            <h2 id="contact-title">Have a hard problem that needs a useful next step?</h2>
           </div>
           <div class="contact-action">
             <p>I’m interested in teams building data products, applied AI, and systems that hold up beyond the demo.</p>
-            <a class="button button-primary" href="https://www.linkedin.com/in/spain-powell/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="https://www.linkedin.com/in/spain-powell/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>

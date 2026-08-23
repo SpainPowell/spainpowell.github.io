@@ -20,6 +20,7 @@ const checks = [
   [html.startsWith("<!doctype html>"), "index.html has a doctype"],
   [html.includes('<html lang="en"'), "index.html declares a document language"],
   [html.includes('id="main-content"'), "index.html has a main landmark"],
+  [html.includes('id="main-content" tabindex="-1"'), "skip-link target can receive focus"],
   [html.includes('id="work"') && html.includes('id="about"') && html.includes('id="contact"'), "primary sections are present"],
   [html.includes('rel="icon"'), "favicon metadata is present"],
   [html.includes('og-image.svg') && html.includes('og:image:width" content="1200"') && html.includes('og:image:height" content="630"'), "social image metadata is present"],
@@ -28,6 +29,8 @@ const checks = [
   [css.includes("--clay: #de8248") && css.includes("--pacific: #2f8578"), "handoff palette tokens are present"],
   [js.includes("localStorage") && js.includes("data-theme"), "theme preference logic is present"],
   [html.includes('href="https://www.linkedin.com/in/spain-powell/"'), "contact link is explicit"],
+  [html.includes('href="https://win-the-numbers.vercel.app/"') && html.includes('noopener noreferrer'), "Win The Numbers product link is present and isolated"],
+  [html.includes('role="group" aria-labelledby="current-focus-heading"'), "current-focus panel has a group label"],
 ];
 
 for (const [passed, description] of checks) {
