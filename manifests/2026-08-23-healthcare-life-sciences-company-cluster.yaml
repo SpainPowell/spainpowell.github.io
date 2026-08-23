@@ -1,0 +1,24 @@
+id: 2026-08-23-healthcare-life-sciences-company-cluster
+created: 2026-08-23
+type: synthesis_manifest
+status: queued
+source_cluster: healthcare_and_life_sciences_company_sources
+source_notes:
+  - Dump/2026-08-23 Company Source Archive Batch 7 Intake.md
+  - Dump/2026-08-23 Company Source Archive Batch 7 Harness Synthesis.md
+cluster_synthesis: Dump/2026-08-23 Healthcare and Life Sciences Company Cluster Synthesis.md
+source_inventory: Dump/company-sources/company-source-archive-run-2026-08-23-batch-7.csv
+themes:
+  - evidence_classification
+  - clinical_endpoint_preservation
+  - medical_device_ai_workflow_boundaries
+  - patient_education_uncertainty
+  - regulated_evidence_provenance
+promotion:
+  runtime_updates: false
+  reason: "Cluster synthesis produced candidate artifacts but no implemented runtime template, evaluator, or verifier yet."
+candidate_artifacts:
+  - clinical_evidence_extraction_template
+  - medical_device_workflow_template
+  - patient_education_rubric
+  - regulated_evidence_provenance_checklist

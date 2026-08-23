@@ -1,0 +1,28 @@
+date: 2026-08-23
+source: https://machinelearning.apple.com/research
+source_type: official_machine_learning_research_sitemap
+artifacts:
+  - Dump/Apple Machine Learning Research Intake.md
+  - Dump/2026-08-23 Apple Machine Learning Research Harness Synthesis.md
+  - Dump/apple-machine-learning-urls.txt
+  - Dump/apple-machine-learning-research-urls.txt
+  - Dump/apple-machine-learning-priority-urls.txt
+  - Dump/apple-machine-learning-urls.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  sitemap_urls: 1361
+  research_urls: 1197
+  priority_urls: 1249
+  research_articles: 1196
+  update_articles: 93
+  site_pages: 69
+runtime_changes:
+  agents_md: none
+  claude_folder: none
+  codex_folder: none
+notes:
+  - Robots allows all user agents and declares https://machinelearning.apple.com/sitemap.xml.
+  - A guessed /research/rss.xml path returned HTML rather than RSS; sitemap and research page were treated as reliable surfaces.
+  - Future promotion should trace research ideas to paper assumptions, benchmark setup, code/data availability, and local reproduction where practical.

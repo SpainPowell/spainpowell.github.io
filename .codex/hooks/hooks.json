@@ -1,0 +1,35 @@
+{
+  "_comment": "Codex CLI hooks config, translated from ../../CLAUDE/settings.json's \"hooks\" key. UNVERIFIED against a live Codex install as of 2026-08-21 — this mirrors Claude Code's PreToolUse/PostToolUse/matcher/command shape, which is the closest documented analog, but confirm the exact field names Codex expects (run `codex exec --help` / check your installed version's docs) before trusting it. Scripts are unchanged copies of CLAUDE/hooks/scripts — they read the same JSON-on-stdin tool_input shape either way.",
+  "PreToolUse": [
+    {
+      "matcher": "apply_patch",
+      "hooks": [
+        { "type": "command", "command": "./.codex/hooks/scripts/protect-files.sh" }
+      ]
+    },
+    {
+      "matcher": "shell",
+      "hooks": [
+        {
+          "type": "command",
+          "if": "git commit *",
+          "command": "./.codex/hooks/scripts/branch-guard.sh"
+        },
+        {
+          "type": "command",
+          "if": "git commit *",
+          "command": "./.codex/hooks/scripts/secret-scan.sh"
+        }
+      ]
+    }
+  ],
+  "PostToolUse": [
+    {
+      "matcher": "apply_patch",
+      "hooks": [
+        { "type": "command", "command": "./.codex/hooks/scripts/format-changed.sh" },
+        { "type": "command", "command": "./.codex/hooks/scripts/lint-changed.sh" }
+      ]
+    }
+  ]
+}

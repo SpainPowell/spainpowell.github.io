@@ -1,0 +1,32 @@
+change: inventoried CrowdStrike blog corpus and promoted security-operations controls into the harness
+date: 2026-08-23
+agent: Codex
+artifact_type: doctrine | runbook | index | literature
+status: active
+reason: user requested all CrowdStrike blog sources under crowdstrike.com/en-us/blog/* be collected and used to update the harness
+predicted_fix: future production-agent and unattended-loop designs will account for silent sensor failure, muted-check visibility loss, incident-response ownership, identity/cloud telemetry, independent recovery paths, and runtime drift
+blast_radius:
+  - Dump/CrowdStrike Blog Intake Index.md
+  - Dump/2026-08-23 CrowdStrike Security Operations Corpus.md
+  - Dump/crowdstrike-blog-all-urls.txt
+  - Dump/crowdstrike-blog-priority-urls.txt
+  - Dump/Dump MOC.md
+  - Harness/HARNESS.md
+  - Harness/Unattended Loop Runbook.md
+  - Harness/Harness MOC.md
+  - _meta/Vault Change Log.md
+rollback: remove the CrowdStrike dump notes and revert the silent-failure, telemetry, muted-check, drift, and navigation additions
+evidence:
+  - "[[Dump/CrowdStrike Blog Intake Index]]"
+  - "[[Dump/2026-08-23 CrowdStrike Security Operations Corpus]]"
+  - "Dump/crowdstrike-blog-all-urls.txt"
+  - "Dump/crowdstrike-blog-priority-urls.txt"
+  - "https://www.crowdstrike.com/blog/sitemap_index.xml"
+  - "https://www.crowdstrike.com/en-us/blog/prevention-continuum-preventing-silent-failure/"
+  - "https://www.crowdstrike.com/en-us/blog/why-the-detection-funnel-hits-diminishing-returns/"
+  - "https://www.crowdstrike.com/en-us/blog/the-human-element-of-detection-and-response/"
+  - "https://www.crowdstrike.com/en-us/blog/crowdstrike-incident-response-executive-prep-checklist/"
+  - "https://www.crowdstrike.com/en-us/blog/cloud-security-incident-response-guidance/"
+  - "https://www.crowdstrike.com/en-us/blog/accelerate-response-with-falcon-fusion/"
+  - "https://www.crowdstrike.com/en-us/blog/crowdstrikes-fight-against-identity-based-attacks/"
+  - "https://www.crowdstrike.com/en-us/blog/adversary-focused-platform-approach-to-cloud-security/"

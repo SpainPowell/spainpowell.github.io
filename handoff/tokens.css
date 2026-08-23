@@ -1,0 +1,14 @@
+:root {
+  --ink: #100D0A;        /* page base, dark mode */
+  --graphite: #1C1712;   /* surfaces, cards */
+  --bone: #F7EEDF;       /* text on dark, light-mode base */
+  --driftwood: #9C8E79;  /* secondary text */
+  --pacific: #2F8578;    /* links, water moments */
+  --signal: #C6D230;     /* LIVE DATA ONLY: charts, status, metrics */
+  --clay: #DE8248;       /* primary accent, CTAs, mark node */
+  --line: #332A21;       /* hairline borders on dark */
+  --radius: 12px;
+  --font-display: 'Archivo Variable', 'Archivo', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+/* Light mode: swap ink<->bone; Pacific for links, Clay for accents. */

@@ -1,0 +1,30 @@
+date: 2026-08-23
+source: Fortune 500 and S&P 500 verified company-source archive batch 2
+source_type: company_source_archive_batch
+artifacts:
+  - Dump/2026-08-23 Company Source Archive Batch 2 Intake.md
+  - Dump/2026-08-23 Company Source Archive Batch 2 Harness Synthesis.md
+  - Dump/company-sources/verified_sources.csv
+  - Dump/company-sources/company-source-archive-run-2026-08-23-batch-2.csv
+  - Dump/company-sources/*/*/fetch-manifest.csv
+  - Dump/company-sources/*/*/urls.txt
+  - Dump/company-sources/*/*/priority-urls.txt
+  - Dump/company-sources/*/*/rss-items.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  official_sources_attempted: 17
+  sources_with_archiveable_urls: 6
+  total_urls_archived: 11043
+  priority_urls: 3530
+  rss_items: 10
+runtime_changes:
+  agents_md: none
+  claude_folder: none
+  codex_folder: none
+notes:
+  - Second verified archive batch from the broader company-source discovery inventory.
+  - Qualcomm AI Research dominated the URL count and needs tighter post-level filtering.
+  - Multiple official sources fetched as HTML shells, non-XML placeholders, DNS failures, or HTTP/2 errors and need source-specific discovery.
+  - Runtime promotion deferred until post-level synthesis produces durable, testable guidance.

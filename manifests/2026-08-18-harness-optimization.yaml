@@ -1,0 +1,19 @@
+change: >
+  Full harness restructure: agent roster 41→7 (personas removed, keeps given
+  return contracts + tool cages); Vercel rule packs moved from rules/ into
+  their skills; 4 always-on principle rules distilled into new AGENTS.md
+  template; settings.local.json (allow Bash(*)) replaced by settings.json with
+  deny/ask/allow defaults; skill descriptions de-collided (design cluster);
+  ui-ux-pro-max body split to references; hooks/, manifests/, evals/ layers added.
+failure_pattern: >
+  Router description-collision across 41 persona agents and 7 overlapping
+  design skills; Bash(*) nullifying all permission scoping; skills indexing
+  rule files that lived in the wrong layer (dangling references).
+root_cause: borrowed collections installed as configuration, never audited (HARNESS.md §13)
+artifact_type: multiple
+predicted_fix: >
+  Subagent selection becomes reliable (right agent or none); skill triggers
+  become mutually exclusive; always-on token load drops; permission prompts
+  actually fire for destructive git.
+risk_tasks: [no eval suite existed before this change - baseline arm unavailable]
+verified: not yet

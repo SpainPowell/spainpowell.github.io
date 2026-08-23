@@ -1,0 +1,46 @@
+change: >
+  Added the co-storm skill to both CLAUDE/skills/ and CODEX/skills/
+  (SKILL.md + references/algorithm.md + references/mindmap-format.md +
+  scripts/check_citations.py), formalizing Stanford OVAL's Co-STORM method
+  (multi-perspective discourse + moderator grounded in unused retrieval +
+  growing mind map, turn-policy manager replaced with round-based fan-out —
+  see the skill's references/algorithm.md for why) as a repeatable
+  procedure built entirely on this harness's existing orchestration
+  primitives (HARNESS.md §7: fan-out, evaluator-optimizer, barrier). Added
+  one supporting subagent to each roster,
+  CLAUDE/agents/perspective-researcher.md and
+  CODEX/agents/perspective-researcher.toml — a single parameterized
+  context-firewall worker (the lens comes from the task prompt, not a
+  persona baked into the file), keeping both rosters at 8/8, still under
+  the 10-15 cap. Added one eval case, evals/co-storm-01.json, to both
+  CLAUDE/evals/ and CODEX/evals/.
+failure_pattern: >
+  No failure pattern — not triggered by an observed harness gap. Requested
+  directly: "build the Stanford Co-STORM method into our harness for both
+  CLAUDE and CODEX." Given precedent by this harness's own use of the same
+  shape ad hoc during the 2026-08-18 optimization round (four independent
+  perspective reviewers + synthesis — see
+  manifests/2026-08-18-harness-optimization.yaml) — this change makes that
+  shape repeatable and documented instead of reinvented per use.
+root_cause: >
+  N/A — proactive capability addition, not a bug fix.
+artifact_type: skill
+predicted_fix: >
+  Future "research this thoroughly" / multi-perspective / landscape-survey
+  requests converge on cited, hierarchically-organized reports without the
+  perspective breakdown, moderator questions, or citation grounding being
+  reinvented (or skipped) each time. The citation-checker script gives the
+  one thing this kind of task is otherwise hardest to verify — that every
+  claim in a synthesized report actually traces to a source — a
+  computational gate instead of trusting the write-up.
+risk_tasks: >
+  co-storm-01 is the only eval case so far — below the 5-20 case minimum
+  HARNESS.md §11 recommends and well below the "≥5 eval cases" bar Appendix
+  C's skill-review checklist sets. Nothing to regress against yet; the
+  with_skill/without_skill baseline run against co-storm-01 is the first
+  real test.
+verified: >
+  not yet — needs at least the co-storm-01 baseline-arm run (§11: "the
+  baseline arm is the whole experiment"), ideally several more real
+  research tasks converted into eval cases, before this skill is trusted
+  the way the harness's audited layers (agents, rules) are.

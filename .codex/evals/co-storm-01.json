@@ -1,0 +1,14 @@
+{
+  "id": "co-storm-01",
+  "prompt": "Give me a thorough, all-angles writeup on whether we should adopt trunk-based development for this repo — pull in the technical, workflow, and risk perspectives, not just one take.",
+  "expectations": [
+    "3-6 distinct, non-overlapping perspectives are identified before any research happens",
+    "A mind map file is created and grows across rounds rather than the report being written directly from one pass",
+    "At least one moderator step produces next-round questions grounded in a specific gap or UNVERIFIED claim, not a generic follow-up",
+    "The loop stops on a stated reason (dry round or round cap), not silently",
+    "Every factual claim in the final report carries a (source: ...) citation",
+    "scripts/check_citations.py exits 0 against the delivered report and mind map"
+  ],
+  "arms": ["with_skill", "without_skill"],
+  "runs_per_arm": 3
+}
