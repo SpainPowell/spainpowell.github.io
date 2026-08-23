@@ -1,16 +1,278 @@
----
-layout: default
-title: Portfolio
----
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8">
-    <title>Spain's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spain Powell is a data scientist, engineer, and product-minded systems builder.">
+    <meta name="theme-color" content="#100D0A">
+    <meta property="og:title" content="Spain Powell | Data science, systems, and product">
+    <meta property="og:description" content="Models, tools, and operating systems built for measurable work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spainpowell.github.io/">
+    <meta property="og:image" content="https://spainpowell.github.io/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <title>Spain Powell | Data science, systems, and product</title>
+    <link rel="icon" href="handoff/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="site.js" defer></script>
   </head>
   <body>
-    <h1 style="font-size:30px;">This is Spain Powell's portfolio!</h1>
-    <style>h1{text-align: center;}</style>
-    <img id="image-1" src="Spain_UCI_Grad-11-3.jpg" alt="Graduation Photo" width="500" height="500">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="Spain Powell home">
+          <img class="brand-mark brand-mark-dark" src="handoff/assets/sp-monogram-light-on-dark.svg" alt="">
+          <img class="brand-mark brand-mark-light" src="handoff/assets/sp-monogram-dark-on-light.svg" alt="">
+          <span class="brand-name">Spain Powell</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#method">Method</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light mode" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+          <span data-theme-label>Light mode</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="shell hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Data science / systems / product</p>
+            <h1 id="hero-title">Models that move the work.</h1>
+            <p class="hero-summary">I build predictive models, analytics systems, and practical products that turn complex data into decisions people can use.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">View selected work <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="hero-readout" aria-label="Current focus">
+            <div class="readout-heading">
+              <span>Current focus</span>
+              <span class="readout-live">Active</span>
+            </div>
+            <div class="readout-route" aria-hidden="true">
+              <span class="route-node route-node-start"></span>
+              <span class="route-line"></span>
+              <span class="route-node route-node-end"></span>
+            </div>
+            <div class="readout-body">
+              <strong>Applied analytics → AI systems</strong>
+              <span>From operational models to reliable agent workflows.</span>
+            </div>
+            <div class="readout-meta">
+              <span>33.66°N</span>
+              <span>117.91°W</span>
+              <span>Costa Mesa, CA</span>
+            </div>
+          </div>
+        </div>
+        <div class="shell hero-footnote">
+          <span>Scroll to trace the work</span>
+          <span class="hero-rule" aria-hidden="true"></span>
+          <span>01 / 04</span>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Selected outcomes">
+        <div class="shell proof-grid">
+          <div class="proof-item">
+            <strong>Under 5 min</strong>
+            <span>Model run time per location</span>
+          </div>
+          <div class="proof-item">
+            <strong>$1.5M / mo</strong>
+            <span>Reported operational savings</span>
+          </div>
+          <div class="proof-item">
+            <strong>$24M / yr</strong>
+            <span>Projected pickup opportunity</span>
+          </div>
+          <div class="proof-item proof-item-last">
+            <strong>3+ years</strong>
+            <span>Building impact-oriented systems</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="section-index">01 / Selected work</p>
+            <h2 id="work-title">Evidence over ornament.</h2>
+            <p>Different surfaces, same instinct: structure the mess, make the decision legible, and leave behind something that can run.</p>
+          </div>
+
+          <div class="project-list">
+            <article class="project-item project-featured">
+              <div class="project-meta">
+                <span class="project-number">01</span>
+                <span class="project-status">Logistics analytics / FedEx</span>
+              </div>
+              <div class="project-content">
+                <div>
+                  <h3>Courier productivity model</h3>
+                  <p class="project-kicker">Forecasting for time-commit-centric logistics operations.</p>
+                </div>
+                <p>Extended a Python model to forecast new facility performance up to 12 months ahead. Replaced a manual engineering workflow that took hours per station with a model run under five minutes per location.</p>
+                <div class="tag-row" aria-label="Technologies used">
+                  <span>Python</span><span>SQL</span><span>Forecasting</span><span>Operations</span>
+                </div>
+              </div>
+              <div class="project-outcome">
+                <span>Reported impact</span>
+                <strong>$1.5M<span>/mo</span></strong>
+                <small>$16M monthly upside identified</small>
+              </div>
+            </article>
+
+            <article class="project-item">
+              <div class="project-meta">
+                <span class="project-number">02</span>
+                <span class="project-status">Building / Independent</span>
+              </div>
+              <div class="project-content">
+                <h3>Win The Numbers</h3>
+                <p class="project-kicker">A fantasy football companion built around roster-aware value.</p>
+                <p>Mobile product that aggregates sports data, estimates player value, and generates trade suggestions around the needs of an entire league. Built with a monetization and launch system around the product.</p>
+                <div class="tag-row" aria-label="Technologies used">
+                  <span>Python</span><span>React Native</span><span>Sports data</span><span>AdMob</span>
+                </div>
+              </div>
+              <div class="project-outcome">
+                <span>Signal</span>
+                <strong>Product</strong>
+                <small>Data, algorithms, UX, and launch path</small>
+              </div>
+            </article>
+
+            <article class="project-item">
+              <div class="project-meta">
+                <span class="project-number">03</span>
+                <span class="project-status">Shipped / Clemson</span>
+              </div>
+              <div class="project-content">
+                <h3>Baseball analytics</h3>
+                <p class="project-kicker">From real-game tracking data to coaching decisions.</p>
+                <p>Built a Streamlit application for Clemson Olympic Sports, translating real-game sports tracking data into performance metrics, scouting reports, and post-game breakdowns for coaching decisions.</p>
+                <div class="tag-row" aria-label="Technologies used">
+                  <span>Streamlit</span><span>Sports data</span><span>Python</span><span>Analytics</span>
+                </div>
+              </div>
+              <div class="project-outcome">
+                <span>Audience</span>
+                <strong>Coaches</strong>
+                <small>On-demand, decision-ready reporting</small>
+              </div>
+            </article>
+
+            <article class="project-item">
+              <div class="project-meta">
+                <span class="project-number">04</span>
+                <span class="project-status">Active / TheBrain</span>
+              </div>
+              <div class="project-content">
+                <h3>Claude / Codex harness</h3>
+                <p class="project-kicker">An operating system for reliable agent-assisted work.</p>
+                <p>Designed shared doctrine, runtime mappings, source boundaries, hooks, evals, runbooks, manifests, and review loops that make AI-agent workflows more repeatable and more accountable.</p>
+                <div class="tag-row" aria-label="System components">
+                  <span>Agent systems</span><span>Eval design</span><span>Provenance</span><span>Runbooks</span>
+                </div>
+              </div>
+              <div class="project-outcome">
+                <span>Design principle</span>
+                <strong>Verify</strong>
+                <small>Promote patterns only after evidence</small>
+              </div>
+            </article>
+          </div>
+
+          <div class="lab-note">
+            <div>
+              <p class="section-index">Also in the lab</p>
+              <h3>FoamFinger + Braisen</h3>
+            </div>
+            <p>Two structured product laboratories exploring sports pick'em, social cooking, monetization, compliance-aware planning, and phase-gated execution.</p>
+            <span class="lab-arrow" aria-hidden="true">↗</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section method-section" id="method" aria-labelledby="method-title">
+        <div class="shell method-grid">
+          <div class="section-heading">
+            <p class="section-index">02 / Method</p>
+            <h2 id="method-title">Make the complex usable.</h2>
+          </div>
+          <div class="method-copy">
+            <p class="method-lede">The useful output is rarely the model alone. It is the model, the interface around it, the evidence behind it, and the operating path that keeps it useful.</p>
+            <ol class="method-list">
+              <li><span>01</span><div><strong>Frame the decision</strong><p>Start with the operator, constraint, and outcome. Make the real question explicit before selecting a tool.</p></div></li>
+              <li><span>02</span><div><strong>Structure the signal</strong><p>Pull together messy data, source context, and stakeholder knowledge into something that can be inspected.</p></div></li>
+              <li><span>03</span><div><strong>Ship the surface</strong><p>Turn analysis into a model, dashboard, report, or product that fits the rhythm of the person using it.</p></div></li>
+              <li><span>04</span><div><strong>Leave a verifier</strong><p>Document the assumptions, add the check, and make the next run easier to trust than the last.</p></div></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="shell about-grid">
+          <div class="about-intro">
+            <p class="section-index">03 / About</p>
+            <h2 id="about-title">A builder between the model and the moment it matters.</h2>
+            <p>I’m Spain, a data scientist and engineer based in Costa Mesa, California. My work sits between predictive modeling, analytics engineering, operations, and product-minded execution.</p>
+            <p>I like the point where a messy system becomes legible: a forecast a team can act on, a dashboard that changes the conversation, or a workflow that makes an AI agent more reliable.</p>
+          </div>
+          <div class="about-details">
+            <div class="detail-block">
+              <p class="detail-label">Toolbox</p>
+              <p>Python · SQL · R · React Native · Streamlit · Power BI · Tableau · Excel · AWS · GitHub</p>
+            </div>
+            <div class="detail-block">
+              <p class="detail-label">Education</p>
+              <p><strong>M.S. Data Science &amp; Analytics</strong><br>Clemson University · 2025</p>
+              <p><strong>B.S. Computer Science</strong><br>University of California, Irvine · 2022</p>
+            </div>
+            <div class="detail-block">
+              <p class="detail-label">Currently looking toward</p>
+              <p>Data science and AI roles where predictive models, analytics systems, and data products create measurable real-world impact.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-inner">
+          <div>
+            <p class="section-index">04 / Contact</p>
+            <h2 id="contact-title">Have a hard problem with a useful next step?</h2>
+          </div>
+          <div class="contact-action">
+            <p>I’m interested in teams building data products, applied AI, and systems that hold up beyond the demo.</p>
+            <a class="button button-primary" href="https://www.linkedin.com/in/spain-powell/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div class="footer-brand">
+          <img class="swell-mark swell-mark-dark" src="handoff/assets/swell-mark-light-on-dark.svg" alt="">
+          <img class="swell-mark swell-mark-light" src="handoff/assets/swell-mark-dark-on-light.svg" alt="">
+          <span>Spain Powell</span>
+        </div>
+        <div class="footer-meta"><span>33.66°N / 117.91°W</span><span>Built with care in Costa Mesa</span></div>
+        <a class="footer-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
   </body>
 </html>

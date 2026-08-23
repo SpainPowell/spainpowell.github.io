@@ -1,0 +1,20 @@
+date: 2026-08-23
+source: https://aws.amazon.com/blogs/
+source_type: aws_blogs_landing_page_accessible_snapshot
+artifacts:
+  - Dump/AWS Blogs Intake.md
+  - Dump/2026-08-23 AWS Blogs Harness Synthesis.md
+  - Dump/aws-blogs-accessible-urls.txt
+  - Dump/aws-blogs-priority-urls.txt
+  - Dump/aws-blogs-accessible-urls.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  accessible_urls: 47
+  priority_urls: 14
+limitations:
+  - sitemap.xml and blogs/sitemap.xml returned HTML rather than XML during this run.
+  - Corpus is landing-page/access-surface snapshot, not full AWS Blogs historical archive.
+notes:
+  - Future AWS promotions should require current service docs, region/account validation, IAM boundaries, rollback, logging, and cost evidence.

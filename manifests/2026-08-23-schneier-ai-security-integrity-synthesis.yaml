@@ -1,0 +1,32 @@
+id: 2026-08-23-schneier-ai-security-integrity-synthesis
+date: 2026-08-23
+agent: Codex
+change_type: source-synthesis
+source:
+  - Dump/Schneier Intake Index.md
+  - Dump/2026-08-23 Schneier AI Security and Integrity Corpus.md
+predicted_fix: Security-sensitive agent tasks now require loophole-resistant constraints, contextual-integrity checks for memory/tool disclosure, and explicit boundaries around public interaction.
+artifacts_changed:
+  - Dump/schneier-all-urls.txt
+  - Dump/schneier-priority-urls.txt
+  - Dump/schneier-all-urls.tsv
+  - Dump/schneier-priority-urls.tsv
+  - Dump/Schneier Intake Index.md
+  - Dump/2026-08-23 Schneier AI Security and Integrity Corpus.md
+  - Dump/Dump MOC.md
+  - Harness/HARNESS.md
+  - Harness/Unattended Loop Runbook.md
+  - Harness/CLAUDE/rules/production-agent-security-ops.md
+  - Harness/CODEX/rules/production-agent-security-ops.md
+  - Harness/CLAUDE/agents/security-auditor.md
+  - Harness/CODEX/agents/security-auditor.toml
+  - Harness/Harness MOC.md
+  - _meta/Vault Change Log.md
+rationale: Schneier's recent AI-security and integrity posts convert into durable harness controls for loophole behavior, contextual privacy, and public-world boundaries.
+verification:
+  - Parsed reachable Schneier sitemap shards into full and priority URL corpus files.
+  - Verified promoted strings with rg after edits.
+limitations:
+  - Crypto-Gram sitemap was malformed during this pass and did not yield clean URL blocks.
+rollback:
+  - Remove the Schneier intake/synthesis files and revert the loophole/contextual-integrity additions if they prove noisy or redundant.

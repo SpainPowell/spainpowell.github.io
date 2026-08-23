@@ -1,0 +1,28 @@
+date: 2026-08-23
+source: https://pub.towardsai.net/
+source_type: medium_hosted_ai_ml_practitioner_sitemap_rss
+artifacts:
+  - Dump/Towards AI Intake.md
+  - Dump/2026-08-23 Towards AI Harness Synthesis.md
+  - Dump/towardsai-urls.txt
+  - Dump/towardsai-priority-urls.txt
+  - Dump/towardsai-urls.tsv
+  - Dump/towardsai-rss-items.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  sitemap_urls: 23099
+  priority_urls: 12317
+  rss_items: 10
+  story_urls: 15369
+  tag_urls: 7487
+  page_or_other_urls: 243
+runtime_changes:
+  agents_md: none
+  claude_folder: none
+  codex_folder: none
+notes:
+  - Canonical sitemap was discovered from robots.txt at /sitemap/sitemap.xml; /sitemap.xml returned a Medium 404 page.
+  - Towards AI is treated as Medium-hosted practitioner pattern discovery, not primary authority.
+  - Future promotion requires primary-source corroboration, publication-date capture, and local reproduction where applicable.

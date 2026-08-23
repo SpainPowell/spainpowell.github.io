@@ -1,0 +1,18 @@
+date: 2026-08-23
+source: https://developers.openai.com/community
+source_type: official_openai_community
+artifacts:
+  - Dump/OpenAI Community Intake.md
+  - Dump/2026-08-23 OpenAI Community Harness Synthesis.md
+  - Dump/openai-community-urls.txt
+  - Dump/openai-community-priority-urls.txt
+  - Dump/openai-community-urls.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  community_urls: 6
+  priority_urls: 6
+notes:
+  - Compact official Community section from Developers sitemap.
+  - No new broad runtime rule; treat public/community action as an authority boundary under existing doctrine.

@@ -1,0 +1,22 @@
+date: 2026-08-23
+source: https://machinelearningmastery.com/blog/
+source_type: external_ml_tutorial_blog_accessible_snapshot
+artifacts:
+  - Dump/Machine Learning Mastery Blog Intake.md
+  - Dump/2026-08-23 Machine Learning Mastery Blog Harness Synthesis.md
+  - Dump/machine-learning-mastery-accessible-urls.txt
+  - Dump/machine-learning-mastery-priority-urls.txt
+  - Dump/machine-learning-mastery-accessible-urls.tsv
+  - Dump/machine-learning-mastery-rss-items.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  accessible_urls: 78
+  priority_urls: 22
+  rss_items: 10
+limitations:
+  - XML sitemap index and sitemap.xml returned Cloudflare challenge pages.
+  - Corpus is accessible-surface snapshot, not full historical site archive.
+notes:
+  - Future harness promotion should require primary docs/current library verification and local reproduction.

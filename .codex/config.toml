@@ -1,0 +1,52 @@
+# Codex CLI project config — translated from ../CLAUDE/settings.json's
+# permissions block. UNVERIFIED against a live Codex install as of
+# 2026-08-21 — validate key names against `codex --help` / your installed
+# version's config reference before relying on this.
+#
+# This is NOT a 1:1 port. Codex has no per-command allow/deny/ask glob list
+# like settings.json's — the closest native model is a sandbox tier plus an
+# approval policy plus a network domain allowlist. Where settings.json
+# expressed something that model can't (per-path deny rules), that logic
+# moved into CODEX/hooks/hooks.json instead — see the table below.
+
+approval_policy = "on-request"   # ask before sandbox escalations, network access, side effects
+sandbox_mode = "workspace-write" # read/edit within the repo, run local commands
+
+[sandbox_workspace_write]
+network_access = false  # matches settings.json's default-deny network posture;
+                         # flip to true (or add a network_proxy allowlist below)
+                         # if the project needs `git push`, `npm publish`, etc.
+                         # to run without a manual approval prompt each time
+
+# Uncomment and scope down instead of a blanket network_access = true, once
+# you know which hosts the project actually needs (git remote, npm registry,
+# app-store CLI, etc.):
+# [features.network_proxy]
+# enabled = true
+# domains = { "registry.npmjs.org" = "allow", "github.com" = "allow" }
+
+# --- What settings.json's deny/ask/allow lists became here ---
+#
+# deny (secrets, force-push, destructive git, editing the harness's own
+# guardrail configs) -> CODEX/hooks/hooks.json's PreToolUse hooks
+# (protect-files.sh for paths; branch-guard.sh / secret-scan.sh for commit
+# content). Codex's config.toml has no path-level or command-glob deny list
+# to express these directly.
+#
+# ask (git push, rm -rf, npm publish, eas submit) -> approximated by
+# approval_policy = "on-request" above, which prompts on side-effecting
+# commands and sandbox/network escalations in general — coarser than
+# settings.json's per-command list, not a like-for-like swap.
+#
+# allow (read-only git, check/test runners, WebSearch) -> no action needed;
+# "workspace-write" + "on-request" already runs local read/build/test
+# commands without a prompt. If Codex's approval policy still prompts on
+# read-only commands you expected to run free, look at "granular" or
+# "untrusted" approval_policy values instead — see
+# developers.openai.com/codex/agent-approvals-security.
+
+[mcp_servers]
+# Project MCP servers go here, e.g.:
+# [mcp_servers.my-server]
+# command = "/usr/local/bin/my-mcp-server"
+# env = { API_KEY = "..." }

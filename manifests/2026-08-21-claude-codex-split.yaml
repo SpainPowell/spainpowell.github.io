@@ -1,0 +1,31 @@
+change: >
+  Reorganized the harness folder around two tool implementations: moved
+  agents/, hooks/, rules/, settings.json, and evals/ into CLAUDE/ (unchanged,
+  Claude Code-native); duplicated skills/ into both CLAUDE/skills/ and
+  CODEX/skills/; built a new CODEX/ implementation from scratch (agents/ as
+  TOML, hooks/hooks.json + copied scripts, config.toml permissions
+  translation, rules/ copied plus PORTABILITY-NOTES.md, evals/
+  run-codex-eval.sh), added CLAUDE/README.md and CODEX/README.md as
+  per-folder maps, and appended Appendix Z to HARNESS.md pointing at the
+  split. AGENTS.md, CLAUDE.md, and manifests/ stayed at the root, shared
+  between both implementations.
+failure_pattern: >
+  No failure pattern — this wasn't triggered by an observed harness gap. It
+  was requested directly, following the same-day
+  claude/harness-codex-portability-2026-08-21.md analysis (Harness
+  Engineering project) that first established which layers port cleanly
+  (AGENTS.md, skills) and which need real translation (agents, permissions,
+  hooks, rules, evals).
+root_cause: >
+  N/A — proactive tool-portability work, not a bug fix.
+artifact_type: tool
+predicted_fix: >
+  A Codex CLI project can adopt CODEX/ the way a Claude Code project already
+  adopts CLAUDE/, without hand-translating agents/hooks/permissions/evals
+  from scratch each time. Unverified pieces (hooks.json's exact schema,
+  config.toml's exact keys, sandbox_mode as a tools:-allowlist substitute,
+  the evals with/without-context approximation) are explicitly flagged
+  rather than silently assumed correct, per HARNESS.md's own "don't trust a
+  single unverified pass" standard.
+risk_tasks: [no eval suite exists for CODEX/ yet — nothing to regress against; the first real test is deploying CODEX/ into an actual Codex CLI project and running the "Testing a hook" checklist in CODEX/hooks/README.md]
+verified: not yet — needs a live Codex CLI install to confirm hooks.json/config.toml schema and hook coverage before CODEX/ is trusted the way CLAUDE/ is

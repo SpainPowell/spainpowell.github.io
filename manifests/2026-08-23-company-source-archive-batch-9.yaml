@@ -1,0 +1,29 @@
+id: 2026-08-23-company-source-archive-batch-9
+created: 2026-08-23
+type: source_archive_manifest
+status: archived
+source_inventory: Dump/company-sources/verified_sources.csv
+archive_summary: Dump/company-sources/company-source-archive-run-2026-08-23-batch-9.csv
+archive_root: Dump/company-sources/archives/batch-9
+intake_note: Dump/2026-08-23 Company Source Archive Batch 9 Intake.md
+harness_synthesis: Dump/2026-08-23 Company Source Archive Batch 9 Harness Synthesis.md
+scope:
+  - consumer
+  - travel
+  - hospitality
+  - airline_operations
+  - marketplace_engineering
+  - food_and_cpg
+counts:
+  sources_attempted: 20
+  sources_archiveable: 15
+  urls_archived: 9833
+  priority_urls: 2713
+  rss_items: 40
+promotion:
+  runtime_updates: false
+  reason: "Batch produced candidate marketplace, privacy, customer-experience, and supply-chain templates but no implemented runtime artifact yet."
+follow_up:
+  - "Classify Disney and Charter inventories into post, asset, media, policy, locale, investor, and customer-support pages."
+  - "Retry blocked or sparse consumer/travel sources with alternate official endpoints."
+  - "Extract marketplace-experiment and consumer privacy templates from high-signal posts."

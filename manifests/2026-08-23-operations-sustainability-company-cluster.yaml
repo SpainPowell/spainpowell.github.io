@@ -1,0 +1,29 @@
+date: 2026-08-23
+source: Operations and sustainability company-source cluster
+source_type: post_level_cluster_synthesis
+artifacts:
+  - Dump/2026-08-23 Operations and Sustainability Company Cluster Synthesis.md
+  - Dump/company-sources/schlumberger/slb-insights/priority-urls.txt
+  - Dump/company-sources/halliburton/halliburton-resources/priority-urls.txt
+  - Dump/company-sources/duke-energy/duke-energy-illumination/priority-urls.txt
+  - Dump/company-sources/union-pacific-corporation/union-pacific-inside-track/priority-urls.txt
+  - Dump/company-sources/pepsico/pepsico-r-d-and-innovation/priority-urls.txt
+  - Dump/company-sources/t-mobile-us/t-mobile-news-network-and-technology/priority-urls.txt
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  slb_priority_urls: 1303
+  halliburton_priority_urls: 1107
+  duke_energy_priority_urls: 1565
+  union_pacific_priority_urls: 490
+  pepsico_priority_urls: 562
+  t_mobile_priority_urls: 220
+runtime_changes:
+  agents_md: none
+  claude_folder: none
+  codex_folder: none
+notes:
+  - Priority URL lists include corporate, product, and resource pages and need post-level filtering before direct claims.
+  - Cluster themes are operational assumptions, safety gates, sustainability measurement provenance, telemetry quality, and source authority labels.
+  - Candidate promotions should become runbook templates, safety checklists, sustainability evidence templates, or telemetry-quality evals.

@@ -1,0 +1,18 @@
+change: archived Claude blog dynamic-workflows source and promoted workflow orchestration guidance into HARNESS.md
+date: 2026-08-23
+agent: Codex
+artifact_type: rule
+status: active
+reason: preserve a primary-source Claude Code article and record dynamic workflows as an advanced harness primitive for high-value, parallel, adversarial, or long-running tasks
+predicted_fix: future harness designs choose dynamic workflows only after simpler checks, subagents, loops, or routines are insufficient, and require roles, return contracts, verifier gates, isolation, stop conditions, and token budgets before activation
+blast_radius:
+  - Dump/2026-06-02 Anthropic Dynamic Workflows Harness.md
+  - Dump/Claude Blog Intake Index.md
+  - Dump/Dump MOC.md
+  - Harness/HARNESS.md
+  - Harness/Harness MOC.md
+  - _meta/Vault Change Log.md
+rollback: remove the dynamic-workflows paragraph and source links from Harness/HARNESS.md and Harness/Harness MOC.md; keep the Dump literature note as archived source material
+evidence:
+  - "[[Dump/2026-06-02 Anthropic Dynamic Workflows Harness]]"
+  - "https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code"

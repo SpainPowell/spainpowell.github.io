@@ -1,0 +1,40 @@
+change: added unattended-loop runbook
+failure_pattern: >
+  Teams can schedule an agent task without recording a deterministic gate,
+  persisted state, stop conditions, spending caps, or an escalation path.
+root_cause: >
+  HARNESS.md establishes these safeguards across multiple sections but did not
+  provide a single pre-activation operating contract for a recurring,
+  unattended loop.
+predicted_fix: >
+  Every new unattended loop has a reviewable record of its trigger, scope,
+  deterministic gate, state, caps, isolation, escalation path, and metric
+  before it is scheduled.
+risk_tasks:
+  - T-UNATTENDED-LOOP-SETUP
+  - T-SCHEDULED-CI-TRIAGE
+evidence_source:
+  - "[[Dump/2026-07-30 Polydao Claude Loop Engineering]]"
+  - "[[Dump/2026-06-11 Codez Self-Improving Agent System]]"
+  - "[[Dump/2026-08-22 Learn Harness Engineering]]"
+  - "[[Dump/2026-07-08 Kartiseira Loop Brakes]]"
+  - "[[Dump/2026-07-04 Aparna What Is a Loop]]"
+  - "[[Dump/2026-06-30 Anthropic Getting Started with Loops]]"
+  - "[[Dump/2026-06-28 Archive Loop and Harness Engineering]]"
+  - "[[Dump/2026-06-22 Raytar Stop Being the Loop]]"
+  - "[[HARNESS#9. HOOKS & GATES — the enforcement layer]]"
+  - "[[HARNESS#10. PERMISSIONS & ISOLATION — the blast-radius layer]]"
+evaluation:
+  baseline: "No standard pre-activation record; safeguards are discovered ad hoc."
+  assertions:
+    - "A completed runbook names one deterministic acceptance command and its pass signal."
+    - "A completed runbook names persisted state, success/no-work stops, and hard run limits."
+    - "The state schema distinguishes verified facts, hypotheses/open failures, reusable rules, and a resume pointer."
+    - "The state record retains material decisions and rejected alternatives that later sessions must not silently re-litigate."
+    - "A completed runbook names a circuit-breaker threshold and a missed-heartbeat alert."
+    - "A completed runbook states the autonomy level and human checkpoint for every lifecycle stage it can reach."
+    - "A bounded pilot demonstrates acceptable cost and acceptance rate before the routine broadens scope or frequency."
+    - "The scheduler is a trigger only; every state-dependent decision and skip is recorded by the versioned procedure."
+    - "An exhausted work item is recorded as blocked with evidence and cannot silently stall independent permitted work."
+    - "A completed runbook names an escalation path, kill switch, and isolation level."
+  decision_rule: "Keep only if all assertions can be completed for a real loop and the owner can follow the runbook without adding new safety requirements."

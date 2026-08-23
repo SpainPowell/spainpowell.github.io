@@ -1,0 +1,29 @@
+date: 2026-08-23
+source: https://developers.meta.com/resources/blog/
+source_type: official_developer_platform_blog_landing_and_sitemap
+artifacts:
+  - Dump/Meta Developers Blog Intake.md
+  - Dump/2026-08-23 Meta Developers Blog Harness Synthesis.md
+  - Dump/meta-developers-urls.txt
+  - Dump/meta-developers-priority-urls.txt
+  - Dump/meta-developers-urls.tsv
+  - Dump/meta-developers-blog-landing-links.txt
+  - Dump/meta-developers-blog-landing-links.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  sitemap_urls: 11355
+  priority_urls: 11355
+  blog_landing_links: 4
+  horizon_docs: 10060
+  other_site_pages: 1295
+runtime_changes:
+  agents_md: none
+  claude_folder: none
+  codex_folder: none
+notes:
+  - Robots declares a gzipped sitemap path, but it returned an empty file in this pass.
+  - /sitemap.xml returned a parseable sitemap dominated by Horizon documentation.
+  - The supplied blog landing page exposed four blog/resource links directly and did not provide complete chronological blog coverage.
+  - Future promotion should keep Meta product scope, account authority, app permissions, policy, review status, and audit evidence explicit.

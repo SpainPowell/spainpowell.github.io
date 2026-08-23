@@ -1,0 +1,8 @@
+{
+  "name": "spainpowell.github.io",
+  "private": true,
+  "scripts": {
+    "lint": "node scripts/verify.mjs",
+    "build": "node scripts/verify.mjs"
+  }
+}

@@ -1,0 +1,27 @@
+date: 2026-08-23
+source: https://www.marktechpost.com/
+source_type: ai_ml_research_news_sitemap_rss
+artifacts:
+  - Dump/MarkTechPost Intake.md
+  - Dump/2026-08-23 MarkTechPost Harness Synthesis.md
+  - Dump/marktechpost-urls.txt
+  - Dump/marktechpost-priority-urls.txt
+  - Dump/marktechpost-urls.tsv
+  - Dump/marktechpost-rss-items.tsv
+  - Dump/marktechpost-sitemap-shards.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  sitemap_shards: 18
+  sitemap_urls: 12097
+  priority_urls: 10214
+  rss_items: 10
+runtime_changes:
+  agents_md: none
+  claude_folder: none
+  codex_folder: none
+notes:
+  - MarkTechPost is treated as high-volume topic discovery and early warning, not primary authority.
+  - Capability, benchmark, pricing, provider, and security claims require primary-source validation or local reproduction before promotion.
+  - Candidate promotions should become eval fixtures, threat-model scenarios, verifier scripts, or dated runbook inputs rather than broad always-on prose.

@@ -1,0 +1,23 @@
+date: 2026-08-23
+source: https://deepmind.google/blog/
+source_type: official_ai_research_model_safety_blog_sitemap_rss
+artifacts:
+  - Dump/DeepMind Blog Intake.md
+  - Dump/2026-08-23 DeepMind Blog Harness Synthesis.md
+  - Dump/deepmind-blog-urls.txt
+  - Dump/deepmind-blog-priority-urls.txt
+  - Dump/deepmind-adjacent-research-model-safety-urls.txt
+  - Dump/deepmind-blog-rss-items.tsv
+  - Dump/deepmind-blog-priority-rss-items.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  blog_urls: 346
+  priority_urls: 206
+  adjacent_model_safety_science_urls: 104
+  rss_items: 100
+  priority_rss_items: 76
+notes:
+  - Robots allowed crawling and sitemap/RSS surfaces were accessible.
+  - Future promotion should trace claims to paper/model-card/code/benchmark or local reproduction.

@@ -1,0 +1,18 @@
+date: 2026-08-23
+source: https://developers.openai.com/showcase
+source_type: official_openai_showcase
+artifacts:
+  - Dump/OpenAI Showcase Intake.md
+  - Dump/2026-08-23 OpenAI Showcase Harness Synthesis.md
+  - Dump/openai-showcase-urls.txt
+  - Dump/openai-showcase-priority-urls.txt
+  - Dump/openai-showcase-urls.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  showcase_urls: 44
+  priority_urls: 25
+notes:
+  - Split Showcase-specific corpus from the broader OpenAI Developers sitemap.
+  - No new broad runtime rule; use as examples for future visual, interaction, and app workflow evals.

@@ -1,0 +1,30 @@
+id: 2026-08-23-threatpost-historical-threat-ops-synthesis
+date: 2026-08-23
+agent: Codex
+change_type: source-synthesis
+source:
+  - Dump/Threatpost Blog Intake Index.md
+  - Dump/2026-08-23 Threatpost Historical Threat Operations Corpus.md
+predicted_fix: External threat reports that influence agent action now require source status, publication or last-seen date, and freshness/corroboration before remediation.
+artifacts_changed:
+  - Dump/threatpost-blog-all-urls.txt
+  - Dump/threatpost-blog-priority-urls.txt
+  - Dump/threatpost-blog-all-urls.tsv
+  - Dump/threatpost-blog-priority-urls.tsv
+  - Dump/Threatpost Blog Intake Index.md
+  - Dump/2026-08-23 Threatpost Historical Threat Operations Corpus.md
+  - Dump/Dump MOC.md
+  - Harness/HARNESS.md
+  - Harness/Unattended Loop Runbook.md
+  - Harness/CLAUDE/rules/production-agent-security-ops.md
+  - Harness/CODEX/rules/production-agent-security-ops.md
+  - Harness/CLAUDE/agents/security-auditor.md
+  - Harness/CODEX/agents/security-auditor.toml
+  - Harness/Harness MOC.md
+  - _meta/Vault Change Log.md
+rationale: Threatpost provides a large historical security-news corpus, but its feed appears to stop in 2022; the durable harness lesson is to separate historical pattern extraction from current threat-intel action.
+verification:
+  - Parsed 16 Threatpost post sitemap shards into full and priority URL corpus files.
+  - Verified references with rg after edits.
+rollback:
+  - Remove the Threatpost intake/synthesis files and revert the freshness-label additions if they prove noisy or redundant.

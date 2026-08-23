@@ -1,0 +1,24 @@
+change: promoted security-operations corpus lessons into AGENTS.md and Claude/Codex runtime artifacts
+date: 2026-08-23
+agent: Codex
+artifact_type: always-on instructions | runtime rule | subagent | index
+status: active
+reason: user noted that prior corpus synthesis updated shared doctrine but not AGENTS.md or the Claude/Codex runtime folders
+predicted_fix: agentic, unattended, remediation, and security-sensitive changes now trigger runtime guidance and security-auditor checks for owner, kill switch, rollback, sensor heartbeat, signal trust labels, agent activity profile, remediation authority, muted-check visibility loss, and capability provenance
+blast_radius:
+  - Harness/AGENTS.md
+  - Harness/CLAUDE/rules/production-agent-security-ops.md
+  - Harness/CODEX/rules/production-agent-security-ops.md
+  - Harness/CLAUDE/agents/security-auditor.md
+  - Harness/CODEX/agents/security-auditor.toml
+  - Harness/CLAUDE/Claude Artifact Index.md
+  - Harness/CODEX/Codex Artifact Index.md
+  - Harness/Harness MOC.md
+  - _meta/Vault Change Log.md
+rollback: remove the production-agent-security-ops rule files and revert the AGENTS.md, security-auditor, artifact-index, MOC, and changelog edits
+evidence:
+  - "[[Dump/2026-08-23 CrowdStrike Security Operations Corpus]]"
+  - "[[Dump/2026-08-23 SANS AI Security Operations Corpus]]"
+  - "[[Dump/2026-08-23 Huntress Managed Security Operations Corpus]]"
+  - "[[Dump/2026-08-23 Dark Reading AI Security Operations Feed]]"
+  - "[[Dump/2026-08-23 Sophos Active Adversary and Agent Telemetry Corpus]]"

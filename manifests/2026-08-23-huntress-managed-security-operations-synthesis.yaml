@@ -1,0 +1,33 @@
+change: inventoried Huntress blog corpus and promoted managed security-operations controls into the harness
+date: 2026-08-23
+agent: Codex
+artifact_type: doctrine | runbook | index | literature
+status: active
+reason: user supplied huntress.com/blog/* and asked to continue corpus-backed harness updates
+predicted_fix: future production-agent and remediation-loop designs will separate confirmed-malicious action from benign closure, use human-owned playbooks and thresholds, bundle related signals into cases, define remediation authorization matrices, and validate supply-chain or exploit response with evidence
+blast_radius:
+  - Dump/Huntress Blog Intake Index.md
+  - Dump/2026-08-23 Huntress Managed Security Operations Corpus.md
+  - Dump/huntress-blog-all-urls.txt
+  - Dump/huntress-blog-priority-urls.txt
+  - Dump/Dump MOC.md
+  - Harness/HARNESS.md
+  - Harness/Unattended Loop Runbook.md
+  - Harness/Harness MOC.md
+  - _meta/Vault Change Log.md
+rollback: remove the Huntress dump notes and revert the malicious-action/benign-closure, remediation-matrix, case-bundle, and supply-chain/exploit-response additions
+evidence:
+  - "[[Dump/Huntress Blog Intake Index]]"
+  - "[[Dump/2026-08-23 Huntress Managed Security Operations Corpus]]"
+  - "Dump/huntress-blog-all-urls.txt"
+  - "Dump/huntress-blog-priority-urls.txt"
+  - "https://www.huntress.com/sitemap.xml"
+  - "https://www.huntress.com/blog/ai-soc-guardrails-what-athena-can-and-cant-do"
+  - "https://www.huntress.com/blog/athena-huntress-agentic-soc-analyst"
+  - "https://www.huntress.com/blog/ai-signal-triage"
+  - "https://www.huntress.com/blog/active-remediation-proactive-incident-response-with-huntress-managed-edr"
+  - "https://www.huntress.com/blog/auto-remediations-save-precious-time-on-low-level-incidents"
+  - "https://www.huntress.com/blog/a-recap-of-events-and-lessons-learned-during-the-kaseya-vsa-supply-chain-attack"
+  - "https://www.huntress.com/blog/3cx-voip-software-compromise-supply-chain-threats"
+  - "https://www.huntress.com/blog/a-catastrophe-for-control-understanding-the-screenconnect-authentication-bypass"
+  - "https://www.huntress.com/blog/breaking-down-the-threat-hunting-process"

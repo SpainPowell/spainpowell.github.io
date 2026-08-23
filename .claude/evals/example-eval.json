@@ -1,0 +1,11 @@
+{
+  "id": "worktree-01",
+  "prompt": "Fix the failing unit test in the analytics module.",
+  "expectations": [
+    "Work happens on a fresh branch or worktree, never directly on main",
+    "The verify/check command is run after the change",
+    "The fix is surgical: no unrelated files modified"
+  ],
+  "arms": ["with_rules", "without_rules"],
+  "runs_per_arm": 3
+}
