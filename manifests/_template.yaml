@@ -1,0 +1,7 @@
+change: <file added/edited/deleted>
+failure_pattern: <what went wrong, and how many times>
+root_cause: <why the harness didn't prevent it>
+artifact_type: <rule | skill | subagent | hook | lint | tool>
+predicted_fix: <the observable delta you expect>
+risk_tasks: [<eval IDs that might regress>]
+verified: <filled in after the next eval round: confirmed | not-confirmed | reverted>

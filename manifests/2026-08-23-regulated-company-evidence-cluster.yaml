@@ -1,0 +1,31 @@
+date: 2026-08-23
+source: Regulated finance/risk/healthcare company-source cluster
+source_type: post_level_cluster_synthesis
+artifacts:
+  - Dump/2026-08-23 Regulated Company Evidence Cluster Synthesis.md
+  - Dump/company-sources/moody-s-corporation/moody-s-insights/priority-urls.txt
+  - Dump/company-sources/msci/msci-research-and-insights/priority-urls.txt
+  - Dump/company-sources/intercontinental-exchange/ice-insights/priority-urls.txt
+  - Dump/company-sources/morgan-stanley/morgan-stanley-ideas/priority-urls.txt
+  - Dump/company-sources/marsh-mclennan/marsh-mclennan-insights/priority-urls.txt
+  - Dump/company-sources/elevance-health/elevance-health-research-and-insights/priority-urls.txt
+  - Dump/company-sources/humana/humana-healthcare-research/priority-urls.txt
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  moodys_priority_urls: 4426
+  msci_priority_urls: 3745
+  ice_priority_urls: 1950
+  morgan_stanley_priority_urls: 1005
+  marsh_mclennan_priority_urls: 1098
+  elevance_priority_urls: 759
+  humana_priority_urls: 397
+runtime_changes:
+  agents_md: none
+  claude_folder: none
+  codex_folder: none
+notes:
+  - Priority URL lists are noisy and need filtering before direct post-level claims.
+  - Cluster themes are methodology labels, advice boundaries, risk/resilience patterns, cyber/trust, and healthcare review thresholds.
+  - Candidate promotions should become templates, runbooks, eval fixtures, or evidence-chain checklists.

@@ -1,0 +1,28 @@
+id: 2026-08-23-company-source-archive-batch-7
+created: 2026-08-23
+type: source_archive_manifest
+status: archived
+source_inventory: Dump/company-sources/verified_sources.csv
+archive_summary: Dump/company-sources/company-source-archive-run-2026-08-23-batch-7.csv
+archive_root: Dump/company-sources/archives/batch-7
+intake_note: Dump/2026-08-23 Company Source Archive Batch 7 Intake.md
+harness_synthesis: Dump/2026-08-23 Company Source Archive Batch 7 Harness Synthesis.md
+scope:
+  - healthcare
+  - life_sciences
+  - biopharma
+  - medical_devices
+  - diagnostics
+counts:
+  sources_attempted: 20
+  sources_archiveable: 17
+  urls_archived: 33274
+  priority_urls: 27134
+  rss_items: 0
+promotion:
+  runtime_updates: false
+  reason: "Batch requires post-level URL classification and template extraction before AGENTS.md, CLAUDE, or CODEX runtime promotion."
+follow_up:
+  - "Classify healthcare sitemap URLs into post, press release, policy, PDF, asset, locale, career, investor, and product pages."
+  - "Retry Gilead, Vertex, and Cardinal Health with alternate official source paths."
+  - "Extract concrete clinical evidence and medical-device AI workflow templates."

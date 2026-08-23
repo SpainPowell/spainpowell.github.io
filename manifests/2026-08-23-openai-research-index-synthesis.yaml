@@ -1,0 +1,31 @@
+id: 2026-08-23-openai-research-index-synthesis
+date: 2026-08-23
+agent: Codex
+change_type: source-synthesis
+source:
+  - Dump/OpenAI Research Index Intake.md
+  - Dump/2026-08-23 OpenAI Research Index Harness Synthesis.md
+predicted_fix: Harness evals now require benchmark-health review for contamination, flawed tests, underspecification, saturation, and monitorability drift before benchmark scores are treated as evidence.
+artifacts_changed:
+  - Dump/openai-research-index-urls.txt
+  - Dump/openai-research-index-priority-urls.txt
+  - Dump/openai-research-index-urls.tsv
+  - Dump/openai-research-index-priority-urls.tsv
+  - Dump/OpenAI Research Index Intake.md
+  - Dump/2026-08-23 OpenAI Research Index Harness Synthesis.md
+  - Dump/Dump MOC.md
+  - Harness/HARNESS.md
+  - Harness/Self-Optimization Runbook.md
+  - Harness/CLAUDE/evals/README.md
+  - Harness/CODEX/evals/README.md
+  - Harness/Harness MOC.md
+  - _meta/Vault Change Log.md
+rationale: OpenAI research pages add durable eval-integrity and monitorability guidance that belongs in the harness evaluation layer rather than the always-on runtime rules.
+verification:
+  - Parsed official OpenAI sitemap shards into full and priority URL corpus files.
+  - Opened representative official OpenAI pages for synthesis where possible.
+  - Verified promoted strings with rg after edits.
+limitations:
+  - Direct curl access to https://openai.com/research/index/ returned a Cloudflare challenge; sitemap inventory was used for coverage.
+rollback:
+  - Remove the OpenAI intake/synthesis files and revert benchmark-health additions if they prove noisy or redundant.

@@ -1,0 +1,23 @@
+date: 2026-08-23
+source: https://research.google/blog/
+source_type: official_ai_research_blog_sitemap_rss
+artifacts:
+  - Dump/Google Research Blog Intake.md
+  - Dump/2026-08-23 Google Research Blog Harness Synthesis.md
+  - Dump/google-research-blog-urls.txt
+  - Dump/google-research-blog-priority-urls.txt
+  - Dump/google-research-ai-quests-urls.txt
+  - Dump/google-research-blog-rss-items.tsv
+  - Dump/google-research-blog-priority-rss-items.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  blog_urls: 1604
+  priority_urls: 435
+  ai_quests_urls: 93
+  rss_items: 100
+  priority_rss_items: 67
+notes:
+  - Robots allowed crawling and sitemap/RSS surfaces were accessible.
+  - Future promotion should trace claims to paper/code/data/benchmark or local reproduction.

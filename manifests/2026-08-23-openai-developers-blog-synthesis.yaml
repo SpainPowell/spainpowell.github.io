@@ -1,0 +1,24 @@
+date: 2026-08-23
+source: https://developers.openai.com/blog
+source_type: official_openai_developers_feed
+artifacts:
+  - Dump/OpenAI Developers Blog Intake.md
+  - Dump/2026-08-23 OpenAI Developers Blog Harness Synthesis.md
+  - Dump/openai-developers-blog-urls.txt
+  - Dump/openai-developers-blog-priority-urls.txt
+  - Dump/openai-developers-blog-urls.tsv
+  - Dump/openai-developers-blog-priority-urls.tsv
+  - Dump/openai-developers-sitemap-urls.txt
+  - Dump/openai-developers-sitemap-blogish-urls.txt
+promotion_targets:
+  - Harness/HARNESS.md
+  - Harness/CLAUDE/README.md
+  - Harness/CODEX/README.md
+counts:
+  rss_items: 138
+  priority_rss_items: 133
+  sitemap_urls: 1110
+  sitemap_blogish_urls: 913
+notes:
+  - Official Developers blog page exposes RSS, sitemap, llms.txt, and .md page variants.
+  - RSS feed is broader than literal blog paths and includes docs, cookbook, samples, videos, and learn resources.

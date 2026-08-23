@@ -1,0 +1,28 @@
+id: 2026-08-23-company-source-archive-batch-8
+created: 2026-08-23
+type: source_archive_manifest
+status: archived
+source_inventory: Dump/company-sources/verified_sources.csv
+archive_summary: Dump/company-sources/company-source-archive-run-2026-08-23-batch-8.csv
+archive_root: Dump/company-sources/archives/batch-8
+intake_note: Dump/2026-08-23 Company Source Archive Batch 8 Intake.md
+harness_synthesis: Dump/2026-08-23 Company Source Archive Batch 8 Harness Synthesis.md
+scope:
+  - enterprise_software
+  - developer_platforms
+  - cloud_infrastructure
+  - research
+  - fintech
+counts:
+  sources_attempted: 13
+  sources_archiveable: 7
+  urls_archived: 2652
+  priority_urls: 1401
+  rss_items: 0
+promotion:
+  runtime_updates: false
+  reason: "Batch produced platform-contract and eval candidates, but no implemented runtime rule or verifier yet."
+follow_up:
+  - "Retry Cadence, Gartner, NetApp, Akamai, Arista, and HPE using alternate official source paths."
+  - "Classify software/platform URLs before converting them into templates."
+  - "Extract platform-post and AI benchmark review templates from high-signal posts."

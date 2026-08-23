@@ -1,0 +1,24 @@
+change: captured accessible Dark Reading RSS feed and promoted AI security-operations controls into the harness
+date: 2026-08-23
+agent: Codex
+artifact_type: doctrine | runbook | index | literature
+status: active
+reason: user supplied darkreading.com/* and asked to continue corpus-backed harness updates
+predicted_fix: future production-agent designs will inventory skill/plugin/tool provenance, label agent-facing signals by source and trust, isolate multi-agent shared resources, model vulnerability remediation as attack-chain reduction, and require bypass/regression checks for AI-generated patches
+blast_radius:
+  - Dump/Dark Reading Intake Index.md
+  - Dump/2026-08-23 Dark Reading AI Security Operations Feed.md
+  - Dump/darkreading-rss-all-urls.txt
+  - Dump/darkreading-rss-priority-urls.txt
+  - Dump/Dump MOC.md
+  - Harness/HARNESS.md
+  - Harness/Unattended Loop Runbook.md
+  - Harness/Harness MOC.md
+  - _meta/Vault Change Log.md
+rollback: remove the Dark Reading dump notes and revert the supply-chain provenance, signal trust labels, multi-agent conflict, patch-chain, and AI-generated-patch verification additions
+evidence:
+  - "[[Dump/Dark Reading Intake Index]]"
+  - "[[Dump/2026-08-23 Dark Reading AI Security Operations Feed]]"
+  - "Dump/darkreading-rss-all-urls.txt"
+  - "Dump/darkreading-rss-priority-urls.txt"
+  - "https://www.darkreading.com/feeds/rss.xml"

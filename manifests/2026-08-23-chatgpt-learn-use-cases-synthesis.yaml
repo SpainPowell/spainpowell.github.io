@@ -1,0 +1,21 @@
+date: 2026-08-23
+source: https://learn.chatgpt.com/use-cases
+source_type: official_chatgpt_learn_use_cases
+artifacts:
+  - Dump/ChatGPT Learn Use Cases Intake.md
+  - Dump/2026-08-23 ChatGPT Learn Use Cases Harness Synthesis.md
+  - Dump/chatgpt-learn-use-cases-urls.txt
+  - Dump/chatgpt-learn-use-cases-pages.txt
+  - Dump/chatgpt-learn-use-cases-priority-urls.txt
+  - Dump/chatgpt-learn-use-cases-urls.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  discovered_urls: 147
+  non_query_pages: 116
+  collection_pages: 13
+  priority_urls: 43
+notes:
+  - Used robots-advertised sitemap index, not the 404 sitemap.xml path.
+  - No broad runtime rule; use as workflow/eval seed corpus.

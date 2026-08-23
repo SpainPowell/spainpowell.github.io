@@ -1,0 +1,29 @@
+change: >
+  Added the day-one hooks layer (hooks/scripts/protect-files.sh,
+  branch-guard.sh, secret-scan.sh, lint-changed.sh, format-changed.sh,
+  run-check.sh), wired them into settings.json under a new "hooks" key
+ (PreToolUse: protect-files on Edit|Write, branch-guard + secret-scan on
+  Bash git-commit; PostToolUse: format-changed + lint-changed on Edit|Write),
+  added evals/run-eval.sh (multi-arm eval runner), and added authoring
+  templates rules/_TEMPLATE.md, agents/_TEMPLATE.md, skills/_TEMPLATE/SKILL.md.
+  hooks/README.md rewritten to document the exact wiring and the
+  PreToolUse-exit-2 vs PostToolUse-JSON-decision-block mechanism distinction.
+failure_pattern: >
+  The harness had a hooks/ and evals/ directory (added in the prior
+  optimization pass) but no actual scripts, no settings.json wiring, and no
+  templates — so hooks, evals, and correctly-shaped new rules/agents/skills
+  depended entirely on remembering HARNESS.md's appendices by hand each time.
+root_cause: >
+  Missing layers identified by researching Claude Code's real hook/permission
+  schema (not just HARNESS.md's abstracted description) rather than assuming
+  PreToolUse and PostToolUse share a blocking mechanism — they don't.
+artifact_type: hook
+predicted_fix: >
+  Edits to .env/.claude/settings.json/.git/package-lock.json are blocked
+  before they happen; commits to main/master are blocked; secrets in staged
+  diffs are caught before commit; lint failures on changed files surface to
+  the model via PostToolUse's decision:block channel instead of being
+  silently ignored; new rules/agents/skills start from a doctrine-correct
+  scaffold instead of copied-and-drifted examples.
+risk_tasks: [no eval suite existed before this change - baseline arm unavailable]
+verified: not yet

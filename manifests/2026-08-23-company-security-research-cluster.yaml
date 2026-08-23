@@ -1,0 +1,23 @@
+date: 2026-08-23
+source: Company security research cluster from Fortune/S&P company-source archive
+source_type: post_level_cluster_synthesis
+artifacts:
+  - Dump/2026-08-23 Company Security Research Cluster Synthesis.md
+  - Dump/company-sources/zscaler/zscaler-threatlabz-research/priority-urls.txt
+  - Dump/company-sources/fortinet/fortinet-threat-research-blog/priority-urls.txt
+  - Dump/company-sources/palo-alto-networks/unit-42-threat-research/priority-urls.txt
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  zscaler_priority_urls: 2926
+  fortinet_priority_urls: 764
+  unit42_priority_urls: 22
+runtime_changes:
+  agents_md: none
+  claude_folder: none
+  codex_folder: none
+notes:
+  - Priority URL lists are noisy and need post-level filtering before direct runtime promotion.
+  - Cluster themes are AI/agent security, identity/access, cloud/runtime exposure, malware/vulnerability scenarios, detection/response, and threat freshness.
+  - Candidate promotions should become eval fixtures, runbooks, freshness rubrics, or verifier scripts.

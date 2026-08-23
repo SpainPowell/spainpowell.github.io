@@ -1,0 +1,21 @@
+date: 2026-08-23
+source: https://bair.berkeley.edu/blog/
+source_type: academic_ai_research_blog_rss
+artifacts:
+  - Dump/BAIR Blog Intake.md
+  - Dump/2026-08-23 BAIR Blog Harness Synthesis.md
+  - Dump/bair-blog-urls.txt
+  - Dump/bair-blog-priority-urls.txt
+  - Dump/bair-blog-rss-items.tsv
+  - Dump/bair-blog-priority-rss-items.tsv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  unique_urls: 20
+  rss_items: 10
+  priority_urls: 10
+limitations:
+  - robots.txt and sitemap.xml returned 404 pages during this run.
+notes:
+  - Future promotion should trace claims to paper/code/benchmark or local reproduction.

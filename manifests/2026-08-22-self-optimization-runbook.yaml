@@ -1,0 +1,18 @@
+change: added self-optimization runbook
+failure_pattern: >
+  A self-tuning agent can broaden its own mutation scope or optimize against
+  visible tests, producing apparent gains while weakening safeguards or overfitting.
+root_cause: >
+  The harness evaluation doctrine did not provide a single operational contract
+  for constraining optimizer authority and evaluator independence.
+predicted_fix: >
+  Every self-optimization experiment declares immutable controls, a narrow
+  mutable scope, an independent evaluator, held-out tasks, and a rollback path.
+risk_tasks:
+  - T-HARNESS-SELF-TUNING
+evaluation:
+  assertions:
+    - "Candidate diffs cannot touch immutable controls."
+    - "The evaluation set and evaluator are independent of the optimizer."
+    - "A candidate is merged only after baseline comparison and written decision rule."
+  decision_rule: "Keep the runbook if it permits a real candidate experiment without adding missing safety constraints."

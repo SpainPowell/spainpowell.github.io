@@ -1,0 +1,57 @@
+# Codex subagent template — mirrors the Harness's Appendix A4
+# (../../CLAUDE/agents/_TEMPLATE.md), translated onto Codex's subagent
+# mechanics. Docs: developers.openai.com/codex/subagents
+#
+# File location: .codex/agents/<name>.toml (project-scoped) or
+# ~/.codex/agents/<name>.toml (personal). UNVERIFIED against a live Codex
+# install as of 2026-08-21 — confirm field names before relying on this.
+
+name = "<kebab-case-name>"
+
+description = """
+<What it is> + <the trigger phrase, in the user's own words> + <the concrete
+artifacts it touches>. Codex routes to this agent by matching task
+descriptions against this string, the same way Claude Code's subagent
+descriptions work — keep it a router rule, not a vibe.
+"""
+
+# Omit to inherit the parent session's model.
+# model = "<model-id>"
+
+# Codex has no per-agent tool allowlist like Claude Code's `tools:`
+# frontmatter — there is no "commands=yes, edits=no" tier. "read-only" blocks
+# edits AND requires approval for every command (a real cage, but a blunter
+# one than Claude Code's). "workspace-write" allows edits and local commands
+# without per-call approval. Pick based on which tradeoff this agent needs,
+# and don't assume the prose instructions below are enforced the way Claude
+# Code's tool restriction is — they're a convention here, not a guarantee.
+sandbox_mode = "read-only"
+
+developer_instructions = """
+You <one-sentence identity tied to the job, not a persona>. <State plainly
+what you do NOT do.>
+
+## Method
+
+1. <First concrete step>
+2. <Second step>
+3. <How you verify your own claim before reporting it>
+
+## Return contract
+
+Your final message IS the deliverable — the parent sees nothing else.
+
+- <Shape: a fixed section list or schema>
+- <Budget: an explicit cap, e.g. "at most 10 findings" / "<=1500 tokens">
+- <Evidence: commands run and what they returned, not assertions>
+- <Filtering: what NOT to return>
+- Prefix anything you could not verify with `UNVERIFIED:`.
+- End with a machine-checkable terminal token, e.g. `RESULT: OK` or `RESULT: FINDINGS <n>`.
+"""
+
+# Before keeping this agent: is it a context firewall (isolates noisy
+# intermediate output) or a sandbox cage (restricted sandbox_mode = a real
+# safety property)? If its only value is "it knows about X" and the base
+# model already knows X, delete it instead — HARNESS.md §7, "persona
+# subagents sit inert." Roster cap: 10-15 total, mutually exclusive
+# descriptions.

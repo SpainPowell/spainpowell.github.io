@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#1C1712"/>
+  <path d="M0 380H1200" stroke="#3B3126" stroke-width="2"/>
+  <path d="M0 432C260 412 430 444 650 425C860 407 1000 435 1200 420" stroke="#2E2620" stroke-width="2"/>
+  <path d="M0 510C260 492 430 523 650 505C860 487 1000 515 1200 500" stroke="#292118" stroke-width="2"/>
+  <path d="M70 525L280 430L480 462L700 305L920 366L1130 280" stroke="#DE8248" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="70" cy="525" r="8" fill="#9C8E79"/>
+  <circle cx="480" cy="462" r="8" fill="#9C8E79"/>
+  <circle cx="700" cy="305" r="9" fill="#DE8248"/>
+  <circle cx="1130" cy="280" r="9" fill="#F7EEDF"/>
+  <text x="72" y="102" fill="#F7EEDF" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">SPAIN POWELL</text>
+  <text x="72" y="210" fill="#F7EEDF" font-family="Arial, sans-serif" font-size="74" font-weight="700">Models that move</text>
+  <text x="72" y="290" fill="#F7EEDF" font-family="Arial, sans-serif" font-size="74" font-weight="700">the work.</text>
+  <text x="75" y="570" fill="#9C8E79" font-family="monospace" font-size="16" letter-spacing="3">DATA SCIENCE / SYSTEMS / PRODUCT</text>
+</svg>

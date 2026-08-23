@@ -1,0 +1,31 @@
+change: clarified Claude blog synthesis coverage and promoted missing production-agent controls
+date: 2026-08-23
+agent: Codex
+artifact_type: doctrine | runbook | index
+status: active
+reason: the intake index made it look as if the whole Claude blog corpus had been absorbed, while only the archived Claude/Anthropic captures had been synthesized into the harness
+predicted_fix: future readers can distinguish queued Claude blog URLs from synthesized sources, and production-agent designs must name owner, home artifact, promotion criteria, feedback harvest, quarantine boundary, implementation notes, and reviewed behavior-change path
+blast_radius:
+  - Harness/HARNESS.md
+  - Harness/Unattended Loop Runbook.md
+  - Harness/Self-Optimization Runbook.md
+  - Harness/Claude Blog Synthesis Ledger.md
+  - Harness/Harness MOC.md
+  - _meta/Vault Change Log.md
+rollback: remove the production-agent contract, added runbook fields, ledger link, and this manifest; keep Dump literature notes unchanged
+evidence:
+  - "[[Dump/Claude Blog Intake Index]]"
+  - "[[Dump/2026-06-02 Anthropic Dynamic Workflows Harness]]"
+  - "[[Dump/2026-06-18 Anthropic Steering Claude Code]]"
+  - "[[Dump/2026-06-30 Anthropic Getting Started with Loops]]"
+  - "[[Dump/2026-07-06 Anthropic Claude Fable Unknowns Field Guide]]"
+  - "[[Dump/2026-07-07 Anthropic Claude Model and Effort]]"
+  - "[[Dump/2026-07-21 Anthropic Datadog Universal Machine Tool]]"
+  - "[[Dump/2026-07-21 Anthropic Secure AI Native SDLC]]"
+  - "[[Dump/2026-07-22 Anthropic Outtake Cyber Investigator]]"
+  - "[[Dump/2026-07-22 Anthropic Verification Loops with Skills]]"
+  - "[[Dump/2026-07-24 Anthropic Claude 5 Context Engineering]]"
+  - "[[Dump/2026-08-14 Anthropic Claude Code Session Value]]"
+  - "[[Dump/2026-08-17 Anthropic ABC Legal Managed Agents]]"
+  - "[[Dump/2026-08-20 Anthropic Claude Code Startup Guide]]"
+  - "[[Dump/2026-08-20 Anthropic Monday Agent First Product]]"

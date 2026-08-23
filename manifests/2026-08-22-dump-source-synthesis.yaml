@@ -1,0 +1,24 @@
+change: synthesized recent Dump primary-source captures into HARNESS.md, AGENTS.md, Harness MOC, Unattended Loop Runbook, and Self-Optimization Runbook
+failure_pattern: source captures were archived in Dump but their reusable harness rules were not yet reflected in the operating doctrine
+root_cause: dump intake and harness promotion were separated; new primary sources needed an explicit synthesis pass
+artifact_type: doctrine | runbook | index
+predicted_fix: future harness changes and unattended loops classify failures, choose the smallest loop primitive, use least-agency boundaries, prefer verified specs for high-risk control logic, and convert repeated manual checks into verifiers
+risk_tasks:
+  - unattended-loop-activation
+  - harness-self-optimization
+  - harness-component-routing
+verified: not-confirmed
+sources:
+  - Dump/2026-06-18 Anthropic Steering Claude Code.md
+  - Dump/2026-06-30 Anthropic Getting Started with Loops.md
+  - Dump/2026-07-06 Anthropic Claude Fable Unknowns Field Guide.md
+  - Dump/2026-07-07 Anthropic Claude Model and Effort.md
+  - Dump/2026-07-21 Anthropic Datadog Universal Machine Tool.md
+  - Dump/2026-07-21 Anthropic Secure AI Native SDLC.md
+  - Dump/2026-07-22 Anthropic Outtake Cyber Investigator.md
+  - Dump/2026-07-22 Anthropic Verification Loops with Skills.md
+  - Dump/2026-07-24 Anthropic Claude 5 Context Engineering.md
+  - Dump/2026-08-14 Anthropic Claude Code Session Value.md
+  - Dump/2026-08-17 Anthropic ABC Legal Managed Agents.md
+  - Dump/2026-08-20 Anthropic Claude Code Startup Guide.md
+  - Dump/2026-08-20 Anthropic Monday Agent First Product.md

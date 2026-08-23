@@ -1,0 +1,28 @@
+date: 2026-08-23
+source: Fortune 500 and S&P 500 company-source discovery
+source_type: company_source_discovery_inventory
+artifacts:
+  - Dump/company-sources/Company Sources MOC.md
+  - Dump/2026-08-23 Fortune and SP500 Company Source Discovery Intake.md
+  - Dump/2026-08-23 Fortune and SP500 Company Source Discovery Harness Synthesis.md
+  - Dump/company-sources/company-membership-inventory.csv
+  - Dump/company-sources/company-source-discovery.csv
+  - Dump/company-sources/fortune500-sheetsteps-first100.csv
+  - Dump/company-sources/fortune500-limited-wikipedia-table.csv
+promotion_targets:
+  - Dump/Dump MOC.md
+  - Harness/Harness MOC.md
+counts:
+  sp500_companies_extracted: 503
+  fortune500_sheetsteps_rows_extracted: 100
+  fortune500_wikipedia_rows_extracted: 20
+  candidate_discovery_rows: 4221
+runtime_changes:
+  agents_md: none
+  claude_folder: none
+  codex_folder: none
+notes:
+  - Created Dump/company-sources/ as a structured staging area for large company-source discovery.
+  - S&P 500 extraction was complete from the public Wikipedia table used in this run.
+  - Fortune 500 extraction remains partial; official Fortune page did not provide a full static table locally, SheetSteps embedded first 100 rows, and Wikipedia exposed a limited update-flagged table.
+  - Candidate discovery rows are query seeds, not verified source pages.
