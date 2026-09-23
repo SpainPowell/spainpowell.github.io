@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
+  <title id="title">Whiff primary horizontal lockup (reverse)</title>
+  <desc id="desc">The Whiff near-miss symbol beside an integrated lowercase wordmark. Transparent background; chalk ink for dark surfaces. A centered target replaces the i dot, and the arrow shaft forms the crossbars of the final f letters.</desc>
+  <g transform="translate(58 54) scale(.56)">
+    <g fill="none" stroke="#F4F0E6" stroke-width="42"><circle cx="266" cy="212" r="142"></circle><circle cx="266" cy="212" r="76"></circle></g>
+    <circle cx="266" cy="212" r="24" fill="none" stroke="#F4F0E6" stroke-width="14"></circle>
+    <g fill="#F4F0E6"><path d="M70 348h28l26 30h62v30h-62l-26 30H70l28-44z"></path><rect x="210" y="378" width="76" height="30"></rect><rect x="310" y="378" width="74" height="30"></rect><path d="M384 348l74 44-74 44z"></path></g>
+  </g>
+  <g transform="translate(360 55) scale(1.08)">
+    <path d="M96.22 230L51.6 230L23.08 106.49L71.15 106.49L79.89 169.97L80.58 169.97L91.16 106.49L130.26 106.49L141.53 169.97L141.99 169.97L150.5 106.49L197.88 106.49L169.13 230L123.13 230L109.79 173.42L109.33 173.42ZM256.07 120.29Q258.83 113.39 265.85 107.64Q272.86 101.89 284.36 101.89Q295.4 101.89 301.96 106.38Q308.51 110.86 312.19 118.34Q315.87 125.81 317.02 135.7Q318.17 145.59 318.17 156.4L318.17 230L271.25 230L271.25 156.4Q271.25 150.19 269.52 146.74Q267.8 143.29 263.89 143.29Q259.52 143.29 257.45 146.85Q255.38 150.42 255.38 156.4L255.38 230L208.46 230L208.46 56.12L255.38 56.12L255.38 120.29ZM340.71 106.49L387.17 106.49L387.17 230L340.71 230Z" fill="#F4F0E6"></path>
+    <g fill="none" stroke="#F4F0E6" stroke-width="8"><circle cx="363.94" cy="73" r="27"></circle><circle cx="363.94" cy="73" r="14.5"></circle></g><circle cx="363.94" cy="73" r="4.6" fill="none" stroke="#F4F0E6" stroke-width="2.6"></circle>
+    <g><path d="M476.64 89.93Q472.73 88.78 469.05 88.78Q462.38 88.78 459.97 93.5Q457.55 98.21 457.55 104.88L457.55 106.49L475.95 106.49L475.95 143.29L457.78 143.29L457.78 230L412.24 230L412.24 143.29L398.21 143.29L398.21 106.49L412.01 106.49L412.01 103.73Q412.01 93.38 414.31 83.49Q416.61 73.6 422.13 66.01Q427.65 58.42 436.97 53.82Q446.28 49.22 460.54 49.22Q463.99 49.22 469.4 49.79Q474.8 50.37 478.71 51.29L476.64 89.93ZM550.24 89.93Q546.33 88.78 542.65 88.78Q535.98 88.78 533.56 93.5Q531.15 98.21 531.15 104.88L531.15 106.49L549.55 106.49L549.55 143.29L531.38 143.29L531.38 230L485.84 230L485.84 143.29L471.81 143.29L471.81 106.49L485.61 106.49L485.61 103.73Q485.61 93.38 487.91 83.49Q490.21 73.6 495.73 66.01Q501.25 58.42 510.56 53.82Q519.88 49.22 534.14 49.22Q537.59 49.22 542.99 49.79Q548.4 50.37 552.31 51.29L550.24 89.93Z" fill="#F4F0E6"></path></g>
+    <path d="M398.21 106.49h151.34V94.89l52 30-52 30v-11.6H398.21z" fill="#F4F0E6"></path>
+  </g>
+</svg>
